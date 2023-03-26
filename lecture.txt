@@ -1,0 +1,32 @@
+Authetication:-Identification
+Authorization:-Providing access
+
+Flow:-
+    =>/register ==>so that we can post the user details into the database
+    =>/login ==> so this was to send the email ans password to server so that it can be compared and user can login
+
+    
+    =>/moviedata (secured) for access we need permission(Authetication)
+    =>/userdetails(secured) for access we need permission(Authetication)
+
+    Ways to provide access:-
+        i>send email and password whenever client is going to send the request at restricted routes (Not an optimised way)
+        ii>Unique Identification ==>Token ==>Randam and Unique for all the client
+
+        We will take help of JWT ==>Authetication ,Authorization and also for exchanging some information
+        -Headers==>what type of token it is and encrption algorithm
+        -Random Payload==>it contains some extra information about the token,which help in genrating the token
+        -verifying signature==> it will as a secret key to decode the token and authenticate or authorize
+
+
+
+
+
+
+        Hashing:-
+                -used for storing the password
+                -Not your plain text text password, it will to somethinga and then strore it in database
+                -whey? =>so that no one can see the actual password
+                -How?  =>
+
+                Hashing
